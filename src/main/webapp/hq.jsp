@@ -47,8 +47,8 @@
             <tr>
                 <td><%= rs.getString("hq_name") %></td>
                 <td><%= rs.getString("hq_address") %></td>
-                <td><a href="hq_change.jsp<%= rs.getInt("hq_id") %>">수정</a></td>
-                <td><a href="hq_del.jsp<%= rs.getInt("hq_id") %>">삭제</a></td>
+                <td><a href="hq_change.jsp<%= request.setAttribute("id", rs.getInt("hq_id")) %>">수정</a></td>
+                <td><a href="hq_del.jsp<%= request.setAttribute("id", rs.getInt("hq_id")) %>">삭제</a></td>
             </tr>
             <%
                 }
