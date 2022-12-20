@@ -19,7 +19,7 @@
         String jdbcDriver = "jdbc:mariadb://localhost:3306/yonsei_train_corp";
         String dbUser = "root";
         String dbPass = "root";
-        /*enginner 로그인*/
+        /*admin 로그인*/
         Class.forName("org.mariadb.jdbc.Driver");
         conn = DriverManager.getConnection(jdbcDriver, dbUser, dbPass);
         stmt = conn.createStatement();

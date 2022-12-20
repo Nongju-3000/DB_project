@@ -55,7 +55,6 @@ public class Test {
 				+ "enginner_id varchar(20) not null,"
 				+ "enginner_password varchar(40) not null,"
 				+ "enginner_name varchar(20) not null,"
-				+ "enginner_datetime datetime not null,"
 				+ "enginner_salary int not null,"
 				+ "enginner_hq_id int not null,"
 				+ "enginner_amount int not null,"
@@ -83,7 +82,7 @@ public class Test {
 				+ "vehicle_id int not null auto_increment,"
 				+ "vehicle_type varchar(20) not null,"
 				+ "vehicle_model varchar(20) not null,"
-				+ "vehicle_year year not null,"
+				+ "vehicle_year int not null,"
 				+ "vehicle_status varchar(20) not null,"
 				+ "vehicle_train_id int not null,"
 				+ "primary key(vehicle_id),"
@@ -93,7 +92,7 @@ public class Test {
 		String insert_admin_query = "create table Admin ("
 				+ "admin_id varchar(20) not null,"
 				+ "admin_password varchar(40) not null,"
-				+ "admin_name varchar(20) not null,"
+				+ "admin_name varchar(20) not null"
 				+ ");";
 
 		try{

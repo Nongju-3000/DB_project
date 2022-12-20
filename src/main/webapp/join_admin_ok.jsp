@@ -23,6 +23,7 @@
             String query = "INSERT INTO admin (admin_id, admin_password, admin_name) VALUES('"+id+"','"+pw+"','"+name+"');";
             System.out.println(query);
 
+            Class.forName("org.mariadb.jdbc.Driver");
             conn = DriverManager.getConnection(jdbcDriver, dbUser, dbPass);
 			stmt = conn.createStatement();
 
